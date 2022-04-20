@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class ConnectionFactory {
 	
 	private static final String USERNAME = "root";
-	private static final String PASSWORD = "Put@31550838";
+	private static final String PASSWORD = "MySQL123456";
 	private static final String DATA_BASE = "jdbc:mysql://localhost:3306/crud";
 	
 	public static Connection createConnectionToMySQL() throws Exception{
@@ -23,7 +23,7 @@ public class ConnectionFactory {
 		Connection con = createConnectionToMySQL();
 		
 		if (con != null) {
-			System.out.println("Conex„o obtida com sucesso" + con);
+			System.out.println("Conex√£o obtida com sucesso" + con);
 			con.close();	
 		}
 		
